@@ -26,7 +26,7 @@ const characterData = () => {
                 characterName.innerText = candidate.name;
                 characterVotes.innerText = candidate.votes;
 
-                let currentVote = passInt(characterVotes.textContent, 10)
+                let currentVote = parseInt(characterVotes.textContent, 10)
 
                 const votesForm = document.getElementById('votes-form')
                 const votes = document.getElementById('votes')
@@ -34,17 +34,15 @@ const characterData = () => {
                 //submit event for the votes
                 votesForm.addEventListener('submit', (event) =>{
                     event.preventDefault()// stops reset to default
-                    let newVote = passInt(votes.value, 10)
+                    let newVote = parseInt(votes.value, 10)
                     currentVote = currentVote + newVote;
                     characterVotes.textContent = currentVote;
                 })
             })
-            // appendChild adds a node to the end of the list of children of a specified parent node
             characters.appendChild(characterList)
 
         })
 
     })
 }
-//fires when index.js loads - before DOMContentLoaded is triggered
 document.addEventListener('DOMContentLoaded', characterData)
