@@ -1,33 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>flatacuties</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <h1 id="title">FLATACUTIES</h1>
-
-  <div class="data">
-  <!--below the header where creatures name will be presented-->
-  </div>
-
-  <div class="creatureInfo">
-    <div id="creatureDetail">
-      <p id="name"></p>
-      <img id="img" alt="character's photo">
-
-
-      <!--the image displayed and the votes-->
-      <h3>Total Votes: <span id="vote-count"></span></h3>
-      <form id="votes-form">
-        <input type="text" placeholder="Enter Votes" id="votes" name="votes" />
-        <input type="submit" value="Add Votes" />
-      </form>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flatacuties</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="logo">
+      <h1 id="title">FLATACUTIES</h1>
     </div>
 
-  </div>
-  <script src="index.js"></script>
-</body>
+    <div id="data">
+      <!-- show characters names here -->
+    </div>
+
+    <div class="characterInfo">
+      <div id="detailed-info">
+        <p id="name"></p>
+        <img
+          id="image"
+          alt="photo of the character"
+        /><!-- display character's image here -->
+        <h4>Total Votes: <span id="vote-count"></span></h4>
+        <form id="votes-form">
+          <input type="text" placeholder="Enter Votes" id="votes" name="votes" />
+          <input type="submit" value="Add Votes" />
+        </form>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
 </html>
