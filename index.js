@@ -13,7 +13,29 @@ const characterData = () => {
             const characterList = document.createElement('li')
             characterList.textContent = candidate.name;
 
-           
+            // image to display when a creature's name is pressed
+            characterList.addEventListener('click', () => {
+                console.log(`${candidate.name}: chosen`)
+
+                //displays the candidate name, image and vote-count
+                const characterImage = document.getElementById('image')
+                const characterName = document.getElementById('name')
+                const characterVotes = document.getElementById('vote-count')
+
+                characterImage.src = candidate.image;
+                characterName.innerText = candidate.name;
+                characterVotes.innerText = candidate.votes;
+
+                let currentVote = parseInt(characterVotes.textContent, 10)
+
+                const votesForm = document.getElementById('votes-form')
+                const votes = document.getElementById('votes')
+
+               
+
+            })
+            // appendChild adds a node to the end of the list of children of a specified parent node
+            characters.appendChild(characterList)
 
         })
 
