@@ -9,7 +9,7 @@ html {
   
   .logo{
     text-align: center;
-    background-color: rgb(243, 45, 187);
+    background-color: rgb(131, 45, 243);
     color: white;
     padding: 0.5em;
   }
@@ -21,7 +21,7 @@ html {
   
   #data {
     height: 14vh;
-    background: rgb(186, 197, 82);
+    background: rgb(39, 216, 4);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -50,7 +50,7 @@ html {
   }
   
   input[type="submit"], button {
-    background-color: rgb(206, 94, 191);
+    background-color: rgb(128, 94, 206);
     color: rgb(50, 42, 165);
     font-size: 30px;
     border-radius: 5px;
