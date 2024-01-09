@@ -2,7 +2,7 @@ const characterData = () => {
     const characters = document.getElementById('data')
 
     characters.innerHTML = '';
-
+   
     fetch('http://localhost:3000/characters')
     .then(response => response.json())
 
