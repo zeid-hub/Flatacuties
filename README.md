@@ -11,4 +11,4 @@ In addition, users can increase the number of votes and also reset the votes to 
 -JavaScript
 
 ### Authors 
-Victor Odhiambo
+Zeid Hassan
